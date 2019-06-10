@@ -1,0 +1,423 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -ms-box-sizing: border-box;
+    --color-text: #5c5ee7;
+	--color-link: #0ab5e4;
+	--color-link-hover: #fff;
+	--color-title: #0ab5e4;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+	font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color: #57585c;
+    color: var(--color-text);
+    overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+audio {
+    background: transparent;
+    width: 50px;
+    height: 25px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+}
+.first {
+    background: linear-gradient(to bottom, #1d2127, #8f8d88e6) ;
+}
+.first img {
+    filter: blur(50px) drop-shadow(10px 10px 25px #ffffffaa);
+    animation: xxvAppear 4s ease-out 1s forwards;
+}
+
+.second {
+    background: linear-gradient(to bottom, #9b9795, #9b9795);
+}
+.third {
+    position: relative;
+    background: linear-gradient(to bottom, #9b9795, #171715);
+    padding-bottom: 10vh;
+    min-height: 960px;
+    min-height: 200vh;
+}
+.sand-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/img/feher/IMG_1715.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 1440px;
+    min-width: 100vw;
+    min-height: 960px;
+    min-height: 200vh;
+    width: 100%;
+    height: 100%;
+}
+
+.img-homok {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: auto;
+}
+
+.img-homok-1 {
+    top: 40%;
+    left: 31%;
+    width: 36%;
+}
+.img-homok-2 {
+    top: 80%;
+    left: 60%;
+    width: 55%;
+}
+.img-homok-3 {
+    top: 54%;
+    left: 75%;
+    width: 55%
+}
+
+.divider-3-4 {
+    background: linear-gradient(to bottom, #9b9795 0%, #575b5e 25%, #333 50%, #151515 100%);
+    height: 75vh;
+}
+
+.fourth {
+    background: #e0e2e7;
+}
+.fent-lent {
+    position: absolute;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.fent-lent1 {
+    top: 25%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 5px #181818; 
+}
+.fent-lent2 {
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    text-shadow: 0px 0px 5px #5c5948;
+}
+.divider-4-5 {
+    background: 
+        linear-gradient(to bottom, #fbd5b244 0%, #ff8d0044 13%, #e9eae0 75%, #e5e6ea 100%), 
+        radial-gradient(circle at 48% -1%, #ffffff 0%, #fdf18f 3%, #f9b564 7%, #C48950 11%, #282825 25%, #282825 42%, #e5e6ea 83%);
+    height: 100vh;
+    transform: translateY(-4px);
+    filter: blur(5px) brightness(1);
+    animation: hullamzas 7s ease-out infinite;
+}
+.fifth {
+    background: #e0e2e7;
+}
+.snow-video {
+    left: -10%!important;
+    width: 120%!important;
+    height: 112%!important;
+    filter: blur(8px);
+    animation: snowfall 10s infinite ease-in-out;
+}
+
+.havaskep {
+    z-index: 1;
+}
+
+.bezuhan {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 60%;
+    transform: rotateZ(16deg);
+    transform-origin: top left;
+    display: none;
+    z-index: 2;
+}
+
+.bezuhan-animate {
+    display: initial;
+    animation: zuhan 1s ease-in-out backwards;
+}
+.eltunik-animate {
+    display: initial;
+    animation: eltunik 0.8s ease-in forwards;
+}
+
+.divider-5-6 {
+    background: linear-gradient(to bottom, #e5e6ea 0%, #e8e6e9 25%, #e5e6ea 50%, #e2e4e7 100%);
+    height: 50vh;
+}
+.divider-5-6-2 {
+    background: linear-gradient(to bottom, #dedee4, #ffffff);
+    height: 50vh;
+}
+
+.shiftContent {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 13rem);
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.shiftContent__title {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	margin: -5.5vw 0 0 0;
+	z-index: 100;
+	font-size: 10vw;
+	color: var(--color-title);
+	line-height: 1;
+}
+
+.divider-5-6-3 {
+    background: linear-gradient(to bottom, #dedee4, #ffffff);
+    height: 0;
+}
+.divider-6-7 {
+    background: linear-gradient(to bottom, #e5efe7, #d6e1ed);
+    height: 130vh;
+    box-shadow: inset 15px 0px 20px 10px #fff;
+}
+.seventh {
+    background: #fff;
+}
+.nagyfa-2 {
+    transform: rotate3d(1,0,0, 180deg);
+    filter: hue-rotate(160deg);
+}
+.nagyfa-3 {
+    filter: hue-rotate(210deg);
+}
+.nagyfa-bg {
+    background: radial-gradient(circle at 50% 100%, #ffa200 45%, #fff 48%, #e7e4c7 68%);
+}
+.nagyfa-4 {
+    transform: rotate3d(1,0,0, 180deg);
+    filter: hue-rotate(60deg) brightness(3) blur(1px);
+    margin-top: -1px;
+    margin-bottom: -2px;
+}
+.tenger-bg {
+    background: radial-gradient(circle at 50% 0%, #f7f9d4 45%, #111 49%, #48190a 57%, #000000 86%);
+    overflow: hidden;
+
+    /* background: linear-gradient(to bottom, #fff,#fff 45%, #111 59%, #fff 60%); */
+}
+.tenger-ff {
+    transform: rotate3d(1,0,0, 180deg);
+    filter: blur(3px) hue-rotate(45deg) saturate(.3) brightness(6);
+    margin-top: -8px;
+}
+.divider-7-8 {
+    background: linear-gradient(to bottom, #dedee4, #ffffff);
+    /* height: 200vh; */
+}
+
+.vorostenger-bg {
+    margin-top: -2px;
+    background-image: url(/img/voros/tenger.jpg);
+    height: 300vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(1px) brightness(.7) contrast(1.5);
+}
+.kezek-bg {
+    position: relative;
+    height: 100vh;
+}
+.kezek {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    filter: blur(1px) brightness(.7) contrast(1.5);
+    opacity: 0.5;
+    transform: rotate3d(1,0,0,180deg);
+}
+.kezek-2 {
+    
+    filter: blur(1px) brightness(.7) contrast(1.5);
+    opacity: 0.2;
+    transform: translate(-10px, -20px);
+    animation: mozgokezek 20s infinite ease-in-out; 
+}
+.kezek-3 {
+    transform: translate(-10px, 1000px);
+    opacity: .08;
+}
+
+.divider-8-9 {
+    background: linear-gradient(to bottom, #510000, #181818);
+    height: 200vh;
+}
+.divider-9-10 {
+    background: linear-gradient(to bottom, #181818, #191f26);
+    height: 220vh;
+}
+.kiralyno {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 75%;
+    text-align: right;
+    font-size: 1.8rem;
+    max-width: 800px;
+}
+.valtozoban {
+    font-size: 1.4rem;
+}
+
+@keyframes xxvAppear {
+    0% {
+        filter: blur(50px) drop-shadow(10px 10px 25px #ffffffaa);
+    }
+    100% {
+        filter: blur(1px) drop-shadow(10px 10px 100px #ffffffaa);
+    }
+}
+@keyframes hullamzas {
+    0% {
+        transform: translateY(-4px);
+        filter: blur(5px) brightness(1);
+    }
+    25% {
+        transform: translateY(-4px);
+        filter: blur(5px) brightness(1.1);
+    }
+    50% {
+        transform: translateY(-8px);
+        filter: blur(5px) brightness(1);
+    }
+    75% {
+        transform: translateY(-4px);
+        filter: blur(5px) brightness(1.1);
+    }
+    100% {
+        transform: translateY(-4px);
+        filter: blur(5px) brightness(1);
+    }
+}
+@keyframes snowfall {
+    0% {
+        filter: blur(8px);
+    } 
+    50% {
+        filter: blur(3px);
+    }
+    100% {
+        filter: blur(8px);
+    }
+}
+@keyframes zuhan {
+    0% {
+      transform: rotateZ(-80deg);
+      opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+      transform: rotateZ(25deg);
+    }
+    80% {
+        transform: rotateZ(13deg);
+    }
+    90% {
+        transform: rotateZ(18deg);
+    }
+    100% {
+        transform: rotateZ(16deg);
+    }
+}
+@keyframes eltunik {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes mozgokezek {
+    0% {
+        transform: translate(20px, 20px);
+    }
+    10% {
+        transform: translate(20px, 25px);
+    }
+    20% {
+        transform: translate(20px, 22px);
+    }
+    30% {
+        transform: translate(20px, 28px);
+    }
+    40% {
+        transform: translate(20px, 25px);
+    }
+    50% {
+        transform: translate(20px, 30px);
+    }
+    60% {
+        transform: translate(20px, 25px);
+    }
+    70% {
+        transform: translate(20px, 28px);
+    }
+    80% {
+        transform: translate(20px, 22px);
+    }
+    90% {
+        transform: translate(20px, 25px);
+    }
+    100% {
+        transform: translate(20px, 20px);
+    }
+}
+
+
+@media screen and (min-width: 53em) {
+	.shiftContent {
+		height: 200vh;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1140px) {
+    .img-homok-1 { 
+        height: 400px;
+        width: auto;
+    }
+    .img-homok-2 {
+        top: 80%;
+        left: 60%;
+        
+    }
+}
+
